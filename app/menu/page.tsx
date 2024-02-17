@@ -15,8 +15,8 @@ function Section({ title, items }: any) {
     <section>
       <h1>{title}</h1>
       <div id="items">
-        {items.map((item: any) => (
-          <div id="item">
+        {items.map((item: any, i: number) => (
+          <div id="item" key={i}>
             <ChevronRightIcon scale="300%" />
             <p>{item}</p>
           </div>
