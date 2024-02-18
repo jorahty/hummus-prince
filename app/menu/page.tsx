@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from '@radix-ui/react-icons';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function Menu() {
   return (
@@ -17,7 +17,7 @@ function Section({ title, items }: any) {
       <div id="items">
         {items.map((item: any, i: number) => (
           <div id="item" key={i}>
-            <ChevronRightIcon scale="300%" />
+            <ArrowForwardIosIcon />
             <p>{item}</p>
           </div>
         ))}
